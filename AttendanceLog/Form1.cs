@@ -60,7 +60,7 @@ namespace AttendanceLog
             {
                 if (ex.Message != String.Empty)
                 {
-                    lblStatus.Invoke((MethodInvoker)delegate { lblStatus.Text = ex.Message; });
+                    lblStatus.Invoke((MethodInvoker)delegate { lblStatus.Text = ex.Message; });//ex message
                 }
             }
         }
